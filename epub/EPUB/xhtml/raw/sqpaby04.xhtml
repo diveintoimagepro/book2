@@ -1,0 +1,46 @@
+<!--?xml version='1.0' encoding='UTF-8'?--><!DOCTYPE html><html xml:lang="en-us" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../../css/kotobeeInteractive.css" />
+<link rel="stylesheet" type="text/css" href="../../css/global.css" />
+
+    <script type="text/javascript" src="../../js/kotobeeInteractive.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script>
+
+    <title>7.1 Frequency Content of One-Dimensional Signals</title>
+    
+
+
+ </head>
+<body>
+<p style="text-align: center;"><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+<span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"><strong>7.1 Frequency Content of One-Dimensional Signals</strong> </span></span><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"></span></span><br />
+</p>
+
+<p style="text-align: center;"><meta charset="utf-8" /></p>
+
+<div class="kInteractive questions questions893" data-kotobee="Tlg2SlBXBEZRCBoaTV1AUUpGXREACUNkDwYDDR0gDh8bHRZAVxcJREdGGUpAWVVRWiBAUmcAU0cAER8XTl1GVUdXV1FDREdGREpAWRgRBgUNEQAXU09FREpAWQwcAAsGABQAU0dOTV1APx0BCkdXVwkAU0cXAAAbCApGSlBXXwAXUzMVBBwXTl1GQ0dXV1QAU0dOTV1ATlw3BxYICQAXUQ0ZBAEBVkpBLEdXV01RFQVOR0AFHBhaGFFLCldCTkRNUVZdEwcAAg5AUGYAU0dRWypXWCwcCgMBQBZgREY3RwcXCgtRXCdAVmZHDhENTVw3Lg4XB0dXVVdKFlBGWAAUTl1EDgxAVxVMDBQTDUpAWwYHSlBVBAAXURoaDUIWAgIRAREMCktEDVBGWBwbDAEVA0dXVURLBVBGWBwdTl1EBhFAVxVAABYcTV1CCAAYGg8LSwAWIloWBwsLTlwxSlEmSk1RDBlRWypXWV1YSlBXBAAXU09FTVg2TlowQ0dXV0pVFRwbBhxXWV1OSlUnQBcXAhkRCR0zBRwDChAWQBcXWwEGHQpeTl1GHxAAFkBXFxA1BhwFDh0HSlBXX0NEDQYRREpAWQcdCAoJDEJNFTYbGh0XCBtRXVBfEVdQBFlRWl0ACgEQAA8MH0AAU0dODg4eGApYSlBXC1BIAxAGAQEVTl1GVRYXEEAJREdGHAAGCgMnDA0XAAAXU09RWl1BTl1GQ0dXV1VEEgYnCwAADkpGXVgLEElJTVBGWg4cGBgRHS0LBkAAU0dODg4eGApYSlBXF1FJREdGUgkTBxwRQ0dXV0lEDxJRWl1ITl1GCgxAVxcJREdGGRoXGBsdAAwWIUxWERkVEQoWTl1GVUdXVxYAU0dYTV1ADwYHHw4EHGhKBRBRWl1ITl1GHAcRQBcXREIwREpAWQMVFg0QEQAXU09RXy1XWV0EDgYBDEtCREdGUkpAWVpRXVBJQBcXBxoaHDwbEQpRXVBfQBcXUVtNTV1AR0pGXQEKCUpXREdGUkpAWUxHXFFWVhYAU0dYTV1AGwAHSlBXXwAXUwYdDApXWV1YSlBXBklEEgYaCQIXTl1GVUdXV1RQBAYAAQAcGFdNXEdXVwASJVlRWl0WAgwASlBXXwASI1BGWgweBBoQIAwJHAAXU09RWl03Bg4dA0dXVVdAERoGHAYcDEpGXwsWQBcVDhsYEUpAWw4CDgsJBEdJBFBGWBgbHwdRXVIuClFKAxARTV1CKAMbGgZAVxVAAxobAxxXWV1YSlBXDkpRDhcRDSAcBxZRXVBfQBcXNR0dG0pAWwkRDhYQF0AAU0UdG0pAWwAaAxtAVxVEFxQdBA4QBwpRXVIMCwAXUT4bHAAQDgpRXVIEFVVWREdEBx1XWV8DBwcLQBcVFAYdBghXWV8/ABYKB0BAREdEOgoTDwoGQUdXVwASJVlRWl0BHxYYCkdXVx8AU0crGxsLBwpFSlBXSQAXUwEdHAMXTl1GVUdXV2ZNBBYfGAAbBRtRXVBJQBcXFAYRGisbCBtRXVBfQBJnREdGGxoQBgYASlBXXwAXUyYBCgIbH0pGXyMLFlJAEwZRWl1eTl1GDA4ABFcAU0dOTV1AKAMRDhBAVxVkDwYDDR0BTl1GQ0dXV0tKFRAWBwAZTl1GVUdXV3ZEFxBRWl8GBEpGXywKEUBHDhofTV1AR0pGXRIXAFZAEwMRTV1AUUpGXTIXAFZAEwMRTV1CGBoWAgsREUBBREdECQEBHAoGHEdXVwkAU0cYDQ4ABSIbHQdAVxcfREdGJAoTGQFRXVIICldAREdGREpAWQERFxZAVxcfREdGJgoKH0pGXU5AVxdVExACTV1AUUpGXTIXAFNMDgAHTV1AR0pGXRAAFUpXFVBGWlVXWV0mChIKF1EAU0dYTV1AGw4HHEdXVx8AU0ckCRwBTl1GQ0dXV0NECBlRWl1ITl1GKQMMCQAXU1lRWl0BCAAGCjUADEJNFVBGWlVXWV0tABcXQBcVEhYbGgpXWV8dHEdXVQAQIwYXBx0XTlowSlBVSgAXUVBBKhsdHw4YSlchQBcXTVBGWhwRBB0RSlBXXwAXUywbHUpAWwgbG0dXVQAQIxYbGh0XCBtRWiZAVxVUFBAHHAYdBUcHRkdXVUpQFVBGWAAUTl1ESlcnEUpRABlRXStXWV8XABAXAEZRDQxRWl1eTl1GCwcRBExJElBGWlVXWV0wChYEDElWREdGREpAWR4BChERDEpLREdGUkpAWT4BChERDEpLREdETVowBQBRWiZAVxcJREdGCwAAGQoXG0dXVx8AU0c3Bx0ADgwATkdXVwkAU0cdBgwdGR0RDBZAVxcfREdGIQERBB0GCgERQBcXTVBGWhwdGR0NSlBXXwAXUyYbGh0LTl1GQ0dXV1ZQAxgdHBsbBQhRXVBfQBcXMgAWBQYGAgETSlBVSwsAU0dYTV1AGBoWAgsREUBBREdGUkpAWS4aHBUAF1YAU0UHHQ0fAhsACgZEQBcXTVBGWg4eGQoVCxs2EEdICAEADQtXWV1OSlBXMU1MElBGWBsXGBtRXVINBFYAU0UVBB0XCgsNSlBVB0BAD1BGWBwHCQIdGxYAAQAXU1lRWl0XGR0bHTEQB0hMFQEdBghXWV1OSlBXJEsAU0URGh0dGUpGXwoEFgAXURoXCxoAGQoQSlBVEk1MDRBRWl8BDgEQBgwCQBcVABsHHwoAGEpGXxYKQBcVFR0RTV1CGAoGGQcXQBcXTVBGWhwTHQoQOw0rClFAAxobA0pAWVVRXVA2BFNABVBGWBsdTl1EAQ0RAEdKDh5VTV1AR0pGXRAABkxVCBAaHCofCgYYSlBXXwAXUycRCwYCAgoaG0dXVUBIABwYTV1AR0pGXREAFURXAAERLQITAgMHSlBXXwAXUyYRGA4AChsRSlBVCFBJFRwEBApXWV8RAgMMCVYAU0UDARsaTl1EDA0ICERWREdGTVg2Tlgw" id="ki-qs-426" style="color: rgb(51, 51, 51); padding: 5px; font-size: 0.9em; direction: ltr;"></div>
+
+
+</body></html>

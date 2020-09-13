@@ -1,0 +1,87 @@
+<!--?xml version='1.0' encoding='UTF-8'?--><!DOCTYPE html><html xml:lang="en-us" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../../css/global.css" />
+<link rel="stylesheet" type="text/css" href="../../css/kotobeeInteractive.css" />
+
+    <script type="text/javascript" src="../../js/kotobeeInteractive.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script>
+
+    <title>9.6 PCX File Format</title>
+    
+
+
+<meta charset="utf-8" />
+<style type="text/css">
+
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"WP MathA";
+	mso-font-alt:"MT Extra";
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP Greek Century";
+	mso-font-alt:"MT Extra";
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"WP BoxDrawing";
+	mso-font-alt:"Helvetica Neue Bold Condensed";
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+
+div.WordSection1
+	{page:WordSection1;}
+
+</style>
+ </head>
+<body>
+<p style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"><strong>9.6 PCX File Format</strong></span></span></p>
+
+<p style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"></span></span></p>
+
+<div class="WordSection1">
+<div class="kInteractive questions questions744" data-kotobee="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" id="ki-qs-8213" style="color: rgb(51, 51, 51); padding: 5px; font-size: 1em; direction: ltr;"></div>
+
+<p class="MsoNormal" style="mso-pagination:none;tab-stops:-1.0in -.5in 0in .3in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in 6.0in 6.5in 7.0in 7.5in 8.0in 8.5in 9.0in 9.5in 10.0in 10.5in 11.0in 11.5in 12.0in 12.5in 13.0in"><br />
+<span style="font-size:11.0pt; mso-bidi-font-size:10.0pt"></span></p>
+
+<p class="MsoNormal" style="text-align: center;">&#160;</p>
+
+<p class="MsoNormal" style="mso-pagination:none;tab-stops:-1.0in -.5in 0in .3in .5in 1.0in 1.5in 2.0in 2.5in 3.0in 3.5in 4.0in 4.5in 5.0in 5.5in 6.0in 6.5in 7.0in 7.5in 8.0in 8.5in 9.0in 9.5in 10.0in 10.5in 11.0in 11.5in 12.0in 12.5in 13.0in">&#160;</p>
+</div>
+
+
+</body></html>

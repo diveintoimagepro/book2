@@ -1,0 +1,56 @@
+<!--?xml version='1.0' encoding='UTF-8'?--><!DOCTYPE html><html xml:lang="en-us" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../../css/kotobeeInteractive.css" />
+<link rel="stylesheet" type="text/css" href="../../css/global.css" />
+
+    <script type="text/javascript" src="../../js/kotobeeInteractive.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script>
+
+    <title>7.7 Spectral Filtering</title>
+    
+
+
+ </head>
+<body>
+<p style="text-align: center;"><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+<span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"><strong>7.7 Spectral Filtering</strong></span></span> <span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"> </span></span><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"> </span></span><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"></span></span><br />
+</p>
+
+<p style="text-align: center;"><meta charset="utf-8" /></p>
+
+<div class="kInteractive questions questions893" data-kotobee="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" id="ki-qs-426" style="color: rgb(51, 51, 51); padding: 5px; font-size: 0.9em; direction: ltr;"></div>
+
+
+</body></html>

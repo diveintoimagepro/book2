@@ -1,0 +1,38 @@
+<!--?xml version='1.0' encoding='UTF-8'?--><!DOCTYPE html><html xml:lang="en-us" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../../css/global.css" />
+<link rel="stylesheet" type="text/css" href="../../css/kotobeeInteractive.css" />
+
+    <script type="text/javascript" src="../../js/kotobeeInteractive.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script>
+
+    <title>8.3 HSI and RGB-HSI Transformations</title>
+    
+
+
+<meta charset="utf-8" />
+ </head>
+<body>
+<p style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><strong>8.3 HSI and RGB-HSI Transformations</strong></span></span></p>
+
+<div class="kInteractive questions questions893" data-kotobee="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" id="ki-qs-426" style="color: rgb(51, 51, 51); padding: 5px; font-size: 0.9em; direction: ltr;"></div>
+
+<p>&#160;</p>
+
+<p>&#160;</p>
+
+<ol>
+</ol>
+
+
+</body></html>

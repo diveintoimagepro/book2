@@ -1,0 +1,44 @@
+<!--?xml version='1.0' encoding='UTF-8'?--><!DOCTYPE html><html xml:lang="en-us" lang="en-us" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops"><head>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../../css/global.css" />
+<link rel="stylesheet" type="text/css" href="../../css/kotobeeInteractive.css" />
+
+    <script type="text/javascript" src="../../js/kotobeeInteractive.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script>
+
+    <title>8.5 The YIQ Color Model</title>
+    
+
+
+<meta charset="utf-8" />
+ </head>
+<body>
+<p style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"><meta http-equiv="Content-Style-Type" content="text/css" /> <meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</span></span></p>
+
+<p class="p1" style="text-align: center;"><span style="font-size:1.29em"><span style="font-family:times new roman,times,serif"><strong>8.5 The YIQ Color Model</strong></span></span> <span style="font-family:times new roman,times,serif"><span style="font-size:1.29em"></span></span></p>
+
+<div class="kInteractive questions questions893" data-kotobee="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" id="ki-qs-426" style="color: rgb(51, 51, 51); padding: 5px; font-size: 0.9em; direction: ltr;"></div>
+
+<p><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="Generator" content="Cocoa HTML Writer" /><meta name="CocoaVersion" content="1894.5" />
+<style type="text/css">p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px 'Times New Roman'; color: #000000}
+</style>
+</p>
+
+<ol>
+</ol>
+
+
+</body></html>

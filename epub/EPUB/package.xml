@@ -2,7 +2,7 @@
 <package version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="cc: http://creativecommons.org/ns# rendition: http://www.idpf.org/vocab/rendition/# kotobee: https://www.kotobee.com/vocab# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/" xmlns="http://www.idpf.org/2007/opf">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-        <dc:title id="title">Dive into Image Processing Companion</dc:title>
+        <dc:title id="title">Dive into Image Processing Book 2 Companion</dc:title>
 
         <dc:identifier id="pub-id">urn:uuid:10dbba56-83d4-2e55-d33b-7c5cde1e1e05</dc:identifier>
         <meta name="cover" content="img0" />
@@ -11,9 +11,9 @@
         <dc:publisher>N/A</dc:publisher>
         <dc:rights>Copyright © 2020 by Lily R. Liang and Carl G. Looney</dc:rights>
         <dc:language>en</dc:language>
-        <dc:description>&lt;p&gt;Checkpoint questions for the book,&amp;nbsp;&lt;em&gt;Dive into Image Processing,&lt;/em&gt; available on Google Play (GGKEY:YA6NU6C59YZ).&lt;/p&gt;
+        <dc:description>&lt;p&gt;Checkpoint questions for the book,&amp;nbsp;&lt;em&gt;Dive into Image Processing,&lt;/em&gt;&amp;nbsp;Book 2 available on Google Play (GGKEY:LP29S6QWQ1Y).&lt;/p&gt;
 </dc:description>
-        <meta property="dcterms:modified">2020-09-13T19:04:24Z</meta>
+        <meta property="dcterms:modified">2020-09-14T07:27:28Z</meta>
         <meta property="rendition:layout">reflowable</meta>
         <meta property="ibooks:interactive">true</meta>
         <meta property="ibooks:specified-fonts">false</meta>
@@ -51,7 +51,7 @@
 <item id="html26" href="xhtml/raw/sfo68w02.xhtml" media-type="application/xhtml+xml"/>
 <item id="contents" href="xhtml/raw/contents.xhtml"  properties="nav" media-type="application/xhtml+xml"/>
 <item id="ncx" href="xhtml/raw/contents.ncx"  media-type="application/x-dtbncx+xml"/>
-<item id="img0" href="imgs/userslilyonedrive-un.png" properties="cover-image" media-type="image/png"/>
+<item id="img0" href="imgs/userslilyonedrive-01.png" properties="cover-image" media-type="image/png"/>
 
     </manifest>
     <spine toc="ncx">
